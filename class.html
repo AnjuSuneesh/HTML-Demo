@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+</head>
+<body>
+    
+</body><html>
+    <head>
+        <title>New Page</title>
+
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <a href = "#section1" target="_default">go to google</a>
+
+        <p id="section1">
+            This paragraph is for section 1
+        </p>
+
+        <table border="1">
+            <caption>Employee Details</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Address</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td rowspan="2">John</td>
+                <td>Brown</td>
+                <td>Lake cook Rd</td>
+                <td>Chicago</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Lake cook Rd</td>
+                <td>Chicago</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Lake cook Rd</td>
+                <td>Chicago</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- Ordered List -->
+        <ol>
+            <li>Tea</li>
+            <ol type="a">
+                <li>green tea</li>
+            </ol>
+            <li>Coffee</li>    
+            <li>Milk</li>
+        </ol>
+
+        <ul type="square">
+            <li>Tea</li>
+            <li>Coffee</li>    
+            <li>Milk</li>
+        </ul>
+
+        <dl>
+            <dt>Coffee</dt>
+            <dd>--cold coffee</dd>
+            <dd>--expensive</dd>
+            <dt>Tea</dt>
+            <dd>--green tea</dd>
+            <dd>--Cheap</dd>
+        </dl><br>
+
+        <h1>HTML Form:</h1>
+        
+        <form action="/home.html">
+           
+            <table>
+           
+            <tr>
+                <td> <label for="uname">User Name:</label></td>
+                <td> <input type="text" id="uname" name="uname" placeholder="enter user name" /></td>
+            </tr>
+           <tr>
+            <td><label for="pwd">Password:</label></td>
+            <td><input type="password" id="pwd" name="pwd" placeholder="enter password" /></td>
+        </tr> 
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="enter email" /></td>
+        </tr> 
+        <tr>
+            <td><label for="add">Address:</label></td>
+            <td><textarea id="add"></textarea></td>
+        </tr>
+        
+        <tr>
+            
+        </tr>
+        <tr>
+            <td><input type="radio" id="type1" name="empType" value ="Regular" checked></td>
+            <td><label for="type1">Regular</label></td>
+            <td><input type="radio" id="type2" name="empType" value ="PartTime" ></td>
+            <td><label for="type2">Part Time</label></td>
+        </tr>
+        <tr>
+            <td> <input type="checkbox" id = "city1" name = "city1" value = "NewYork" checked></td>
+            <td><label for="city1">New York</label></td>
+            <td> <input type="checkbox" id = "city2" name = "city2" value = "Dallas"></td>
+            <td><label for="city2">Dallas</label></td>
+        </tr>
+        <tr>
+            <td><label for="country">Select Country</label></td>
+        </tr> 
+        <tr>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td><input type="date"></td>
+        </tr>
+         <td>
+            <select id="country" name="countrySelection" >
+              <option></option>
+              <option value="usa">USA</option>  
+              <option value="india">India</option>  
+              <option value="britain">UK</option>    
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <input list="browser">
+                <datalist id="browser">
+                    <option value ="IE">
+                    <option value ="Chrome">
+                    <option value ="Safari">
+
+                </datalist>
+            </td>
+        </tr>
+        </table><br><br>
+        <input type ="submit" name="submit" value ="sign up"> <br><br>
+        <input type="button" name="btn1" value ="click me" onclick="alert('Button Clicked')";>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="uname">User Name:</label>
+            <input type="text" id="uname" name="uname" placeholder="enter user name" />
+            <label for="add">Address:</label>
+            <textarea id="add"></textarea>
+        </fieldset>
+        
+        </form>
+
+    </body>
+</html>
+
+</html>
