@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Page</title>
-</head>
-<body>
-    
-</body><html>
+<!DOCTYPE html> 
+<html>
     <head>
         <title>New Page</title>
 
@@ -18,7 +9,7 @@
         <a href = "#section1" target="_default">go to google</a>
 
         <p id="section1">
-            This paragraph is for section 1
+            This paragraph is for &nbsp;&nbsp;&nbsp;&nbsp; section 1
         </p>
 
         <table border="1">
@@ -75,14 +66,15 @@
 
         <h1>HTML Form:</h1>
         
-        <form action="/home.html">
+        <form action="/home.html" method="post">
            
             <table>
            
             <tr>
                 <td> <label for="uname">User Name:</label></td>
-                <td> <input type="text" id="uname" name="uname" placeholder="enter user name" /></td>
+                <td> <input type="text" id="uname" name="uname" required/></td>
             </tr>
+            
            <tr>
             <td><label for="pwd">Password:</label></td>
             <td><input type="password" id="pwd" name="pwd" placeholder="enter password" /></td>
@@ -93,7 +85,7 @@
         </tr> 
         <tr>
             <td><label for="add">Address:</label></td>
-            <td><textarea id="add"></textarea></td>
+            <td><textarea id="add" ></textarea></td>
         </tr>
         
         <tr>
@@ -105,12 +97,12 @@
             <td><input type="radio" id="type2" name="empType" value ="PartTime" ></td>
             <td><label for="type2">Part Time</label></td>
         </tr>
-        <tr>
             <td> <input type="checkbox" id = "city1" name = "city1" value = "NewYork" checked></td>
             <td><label for="city1">New York</label></td>
             <td> <input type="checkbox" id = "city2" name = "city2" value = "Dallas"></td>
             <td><label for="city2">Dallas</label></td>
-        </tr>
+        </tr> <tr>
+       
         <tr>
             <td><label for="country">Select Country</label></td>
         </tr> 
@@ -152,8 +144,20 @@
         </fieldset>
         
         </form>
+        <hr>
+        <h4>8  &lt; 12</h4>
+        <h4>You owe me &dollar;500 </h4>
+        <h4>&copy;2020-2022 Mars </h4>
+        <h4>&reg;</h4>
+        <p>
+            Lion: <span style="font-size: 100px"> &#129409;</span></p>
+        </p>
+        <hr>
+        <iframe src = "home.html" width="600" height="400" name="myFrame" ></iframe>
+
+        <p>
+            <a href="https://getreturnship.com/" target="myFrame">Open Mars Returnship</a>
+        </p>
 
     </body>
-</html>
-
 </html>

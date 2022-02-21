@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Interests Survey Form</title>
+</head>
+<body>
+    <h1> <u> Interests Survey Form</u></h1>
+   <form action="Employee.html">
+    
+    <tr>
+        <td></td>
+    </tr>
+     <tr>
+        <td> <label for="name">Enter your Name:</label></td>
+        
+        <td> <input type="text" id="name" name="name" required/></td>
+    </tr>
+    <br><br>
+    <tr>
+        <td> <label for="name">Enter your departement:</label></td>
+        <td> <input type="text" id="departement" name="departement" required/></td>
+    </tr>
+    <br><br>
+   
+    <tr>
+        <td><label for="self">Tell us little about yourself:</label></td>
+        <td><textarea name="self" id="self" cols="30" rows="10"></textarea></td>
+    </tr>
+    <br><br>
+
+
+    <tr>
+        <td><label for="exercise">Do you exercise at home?</label></td>
+
+        <td><input type="radio" id="type1" name="exercise1" value ="Yes" checked></td>
+        <td><label for="type1">Yes</label></td>
+        <td><input type="radio" id="type2" name="exercise1" value ="No" ></td>
+        <td><label for="type2">No</label></td>
+    </tr>
+    <br><br>
+    <tr>
+        <td><label for="read">How do you like read about your favorite topics?</label></td>
+    </tr>
+    <br><br>
+    <tr>
+        <td> <input type="checkbox" id = "book" name = "book" value = "book" checked></td>
+        <td><label for="book">Books</label></td>
+        <td> <input type="checkbox" id = "online" name = "online" value = "online"></td>
+        <td><label for="online">Online Resources</label></td>
+        <td> <input type="checkbox" id = "phone" name = "phone" value = "phone" checked></td>
+        <td><label for="phone">Phone apps</label></td>
+        <td> <input type="checkbox" id = "magazines" name = "magazines" value = "magazines"></td>
+        <td><label for="magazines">Magazines</label></td>
+
+    </tr>
+
+<br><br>
+    <tr>
+        <td><label for="movie">What genre of movies do you like?</label></td>
+        <td><select  id="movie" name="movieSelection">
+            <option value="comedy">Comedy</option>
+            <option value="action">Action</option>
+            <option value="romance">Romance</option>
+            <option value="fantasy">Fantasy</option>
+        </select>
+        </td>
+    </tr>
+    <br><br>
+    <tr>
+  <input type ="submit" name="submit" value ="Submit"> 
+      
+
+       <input type="button" name="btn1" value ="Reset">
+</tr>
+</form>
+</body>
+</html>
