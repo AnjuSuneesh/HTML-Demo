@@ -1,6 +1,6 @@
 a {text-decoration: none;
 
-    color: rgb(58, 40, 77);
+    color: red;
  
 }
 caption
@@ -20,4 +20,9 @@ p
 }
 legend
 {
-    -p=9i`0}
+    text-transform: capitalize;
+}
+#form1
+{
+    text-shadow: 2px 2px 2px red;
+}

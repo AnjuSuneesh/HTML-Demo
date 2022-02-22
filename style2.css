@@ -1,0 +1,23 @@
+body{
+     text-align: center;
+}
+h1{
+    text-shadow: 2px 2px 5px rgb(0, 89, 255);
+
+}
+caption
+{
+
+    background-color: yellow;
+    text-transform: uppercase;
+}
+table{
+    text-align: center;
+}
+th{
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 139, 19);
+}
