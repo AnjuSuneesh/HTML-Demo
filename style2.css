@@ -24,3 +24,42 @@ a{
 form{
     text-align: center;
 }
+*{
+   
+    margin: auto;
+}
+input[type=text]:focus {
+   background-color: rgb(111, 235, 11);
+  }
+  p{
+     
+      font-size:x-large;
+      font-style:normal;
+  }
+div>p{
+      font-size:10vw;
+      font-style: italic
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

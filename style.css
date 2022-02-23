@@ -26,3 +26,52 @@ legend
 {
     text-shadow: 2px 2px 2px red;
 }
+*{
+    background-color: rgb(178, 216, 102);
+}
+.fontred{
+    color: red;
+}
+.fontcaps{
+    text-transform: uppercase;
+}
+
+div.fontgreen{
+    color: green;
+}
+ol,p{
+    text-transform:lowercase;
+
+}
+p.fontgreen{
+    color: green;
+    font-style: italic;
+}
+div p{
+    background-color: blueviolet;
+    font-style: normal;
+}
+div > p{
+    font-style: italic;
+}
+div+p{
+    font-size: x-large;
+
+}
+p ~ div{
+    background-color: blanchedalmond;
+}
+table{
+    margin: auto;
+}
+div.fontstyle{
+    /* background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 600;
+    font-variant: small-caps;*/
+    font-size:2em;
+    background-color: aquamarine;
+
+
+}
