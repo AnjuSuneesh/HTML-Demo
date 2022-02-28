@@ -65,8 +65,8 @@ table{
     margin: auto;
 }
 div.fontstyle{
-    /* background-color: aliceblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+   background-color: rgb(247, 247, 247);
+    /*  font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: oblique;
     font-weight: 600;
     font-variant: small-caps;*/
@@ -74,4 +74,22 @@ div.fontstyle{
     background-color: aquamarine;
 
 
+}
+#color{
+    background-color: rgba(240, 73 ,24, 1);
+   /* background-color:  hsl(110,90%, 40%);
+    background-color: greenyellow hsla(hue, saturation, lightness, alpha);
+        /*  border: 2px dashed blue;*/
+     border: 2px dotted blue;
+       margin-left: 100px 20px 500px 100px;
+       margin-top: 200px;
+      padding:50px 20px 50px 20px ;
+
+}
+
+/*body{
+    background-image:url(images/photo-1501183007986-d0d080b147f9.jpg);
+    background-repeat:no-repeat ;
+    background-size: 600px;
+    background-attachment: fixed;
 }

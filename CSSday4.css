@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: blanchedalmond;
+    border: dotted;
+    table-layout: auto;
+    
+}
+.grid{
+    display: grid;
+    background-color: green;
+   
+    padding: 40px;
+    width: 200;
+}
+.container2{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+.cell{
+    display: grid;
+    padding: 45px;
+}
+#yellow{
+    background-color: yellow;
+}
+#red{
+    background-color: red;
+}
+#blue {
+    background-color:blue;
+    height: 200px;
+    bottom: 200px; 
+
+    
+}
+#orange{
+    background-color: orange;
+    padding: 2em;
+    width: 390px;
+}
+.box{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding:10px;
+    
+}
+.box > div{
+    background-color: white;
+}

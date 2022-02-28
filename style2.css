@@ -40,6 +40,9 @@ div>p{
       font-size:10vw;
       font-style: italic
   }
+   li {
+      list-style: none;
+  }
  
 
 

@@ -1,0 +1,57 @@
+body{
+    background: #ccc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box{
+    display: inline-block;
+}
+.mytabs{
+  display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+
+
+}
+#tab1{
+    display: none;
+}
+#tab2{
+    display: none;
+}
+#tab3{
+    display: none;
+}
+
+.mytabs label{
+
+    padding: 25px;
+    background:red;
+    font-weight: bold;
+    order: 0;
+
+}
+
+.mytabs.tab{
+    width: 100%;
+    padding: 20px;
+    background-color: aqua;
+    order: 1;
+    display: none;
+}
+.mytabs.tab h1{
+    font-size: 3em;
+}
+.mytabs input[type='radio']:checked + label + .tab{
+    display: block;
+}
+.mytabs input[type="radio"]:checked + label{
+ input + label{
+     display: inline-block;
+ }
+
+
+
+

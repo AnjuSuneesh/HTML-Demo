@@ -1,0 +1,56 @@
+.parent{
+    border: 2px blue dotted;
+}
+.box{
+    display: inline;
+    background: red;
+    height: 100px;
+    width: 100px;
+}
+#two{
+    background: green;
+    top: 20px;
+    left: 20px;
+    
+    
+}
+.overflow{
+    background-color: coral;
+    border: 1px solid;
+    width: 200PX;
+    height: 200PX;
+    overflow: auto;
+}
+#box1{
+    margin-top: 100px;
+    border: 2px solid;
+    padding: 20px;
+    width: 200px;
+    box-sizing: border-box;
+
+}
+.container{
+    padding: 1em;
+}
+.cell{
+    background-color: lightgreen;
+    padding: 1em;
+}
+.flex{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.flex > .cell{
+    flex-grow: 2;
+}
+.flex > .cell:nth-child(2){
+    flex-grow: 4;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 1em;
+
+}
