@@ -22,7 +22,7 @@
 }
 .cell{
     display: grid;
-    padding: 45px;
+    padding: 40px;
 }
 #yellow{
     background-color: yellow;
@@ -32,8 +32,8 @@
 }
 #blue {
     background-color:blue;
-    height: 200px;
-    bottom: 200px; 
+  
+    
 
     
 }

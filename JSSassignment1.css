@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    background-color: cyan;
+
+}
+#button1{
+    background-color: rgb(229, 255, 0);
+}
+
+#button2{
+    background-color: rgb(114, 218, 17);
+}
+#button3{
+    background-color: rgb(218, 17, 17);
+}
+#button4{
+    background-color: rgb(96, 88, 167);
+}

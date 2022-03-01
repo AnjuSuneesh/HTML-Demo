@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JSSassignment1.css">
+</head>
+<body>
+
+    <script>
+        function getSum(){
+         var a,b,c;
+         a = Number(document.getElementById("first").value);
+         b = Number(document.getElementById("second").value);
+         c=a+b;
+         document.getElementById("result").value=c; 
+        }
+        function getSubtract(){
+
+            var a,b,c;
+         a = Number(document.getElementById("first").value);
+         b = Number(document.getElementById("second").value);
+         c=a-b;
+         document.getElementById("result").value=c; 
+
+        }
+
+       function getMultiplication(){
+
+          var a,b,c;
+          a = Number(document.getElementById("first").value);
+          b = Number(document.getElementById("second").value);
+          c=a*b;
+          document.getElementById("result").value=c; 
+
+}
+function getDevision(){
+
+var a,b,c;
+a = Number(document.getElementById("first").value);
+b = Number(document.getElementById("second").value);
+c=a/b;
+document.getElementById("result").value=c; 
+
+}
+        
+    </script>
+
+    <h1>Calculator</h1>
+    <div>
+  
+                
+        <td><label for="firstno">First Number:</label></td>
+        <td><input type="text" id="first" placeholder="Enter value"/></td>
+    </div><br>
+    <div>
+  
+                
+        <td><label for="secondno">Second Number:</label></td>
+        <td><input type="text" id="second" placeholder="Enter value"/></td>
+    </div><br><br>
+    <div >
+    <button id="button1" onclick="getSum()">+</button> 
+    <button id="button2" onclick="getSubtract()">-</button>
+    <button id="button3" onclick="getMultiplication()">*</button>
+    <button id="button4" onclick="getDevision()">/</button>
+    </div>
+    <br><br>
+    <div>
+        <td><label for="result1">Result:</label></td>
+        <td><input type="text" id="result"/></td>
+       
+    </div>
+    
+
+   
+    
+</body>
+</html>
