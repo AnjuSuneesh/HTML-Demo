@@ -23,5 +23,10 @@
  console.log("5"==="5");
  console.log('5' ==="5");*/
 
+<<<<<<< HEAD
 let names = ["John","Mike","Peter","Kevin"]
 
+=======
+ let a=10;
+ 
+>>>>>>> 0fd44706bef331dc68d21a1415e9adf7b32e3aeb
