@@ -1,57 +1,39 @@
 body{
     background: #ccc;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
-.box{
+.tabcontainer{
+    border: 2px blue dotted;
+}
+.tab{
     display: inline-block;
-}
-.mytabs{
-  display: inline;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 25px;
-
-
+    background: red;
+    width: 100px;
+    height: 50px
+  
 }
 #tab1{
-    display: none;
-}
-#tab2{
-    display: none;
+    background-color: lightgreen;
 }
 #tab3{
-    display: none;
+    background-color: lightgreen;
 }
-
-.mytabs label{
-
-    padding: 25px;
-    background:red;
-    font-weight: bold;
-    order: 0;
-
+#tab4{
+    background-color: cyan;
 }
-
-.mytabs.tab{
-    width: 100%;
-    padding: 20px;
-    background-color: aqua;
-    order: 1;
-    display: none;
+tab1:hover{
+    background-color: lightgreen;
 }
-.mytabs.tab h1{
-    font-size: 3em;
+tab2:hover{
+    background-color: red;
 }
-.mytabs input[type='radio']:checked + label + .tab{
-    display: block;
+tab3:hover{
+    background-color: lightgreen;
 }
-.mytabs input[type="radio"]:checked + label{
- input + label{
-     display: inline-block;
- }
-
+tab4:hover{
+    background-color: cyan;
+}
 
 
 

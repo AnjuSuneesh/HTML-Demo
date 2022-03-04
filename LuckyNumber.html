@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JSSassignment1.css">
+</head>
+<body>
+    <script>
+        let count=1;
+        function checkNumber(){
+            
+            let a;
+            
+            a= Number(document.getElementById("number").value);
+        
+            {
+            if(a===4)
+              {
+    
+                alert('Great! You took '  + count + " attempts to guess it right")
+              
+                
+              }
+            else if(a>4)
+            {
+               
+                alert('Your guess is too high')
+                count=count+1;
+            }
+            else if(a<4) 
+            {
+                alert('Your guess is too small')
+                count=count+1;
+            }
+          
+           
+               
+           }
+        }
+          
+       
+        </script>
+    
+        <h1>Guess my Lucky number</h1>
+        <div>
+      
+            <h4>Guess the number between 1 and 10</h4>      
+            <td><label for="number1">Guess my Lucky number:</label></td>
+            <td><input type="text" id="number" placeholder="Enter Number"/></td>
+        </div><br>
+        
+        <div >
+        <button id="button1" onclick="checkNumber()">CHECK</button>
+        <input type="reset" value="RESET">
+        </div>
+        <br><br>
+</body>
+</html>

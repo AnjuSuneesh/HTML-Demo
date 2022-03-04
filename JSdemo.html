@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txtid">Before the script...</p>
+
+    <br>
+    <input type="text" id="uname" size="20"><br><br>
+    <input type="text" id="pwd" size="20"><br><br>
+    <button onclick="changeColor()">click here...</button><br><br>
+    
+    <input type="number" id="first" size="20"><br><br>
+    <input type="number" id="second" size="20"><br><br>
+    result: <input type="text" id="result"><br><br>
+
+    <button onclick="getSum()">Add</button>
+
+  
+
+    <script>
+     
+console.log("Executing script from within HTML...");
+function changeColor(){
+    var name=document.getElementById("uname").value;
+    var password=document.getElementById("pwd").value;
+    if(name == ''|| password==''){
+        alert('Username or Password cannot be blank')
+    }
+    else{
+    alert('Welcome '  +name);
+}
+
+    document.body.style.backgroundColor="cyan";
+    document.getElementById("txtid").innerHTML = "After Button Clicked";
+}
+function getSum(){
+    var a,b,c;
+    a = Number(document.getElementById("first").value);
+   b = Number(document.getElementById("second").value);
+   c=a+b;
+   document.getElementById("result").value=c;
+
+}
+
+
+    </script>
+    <p>After the script</p>
+    
+</body>
+</html>
