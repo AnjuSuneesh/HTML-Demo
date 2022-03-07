@@ -13,7 +13,7 @@
 
         function getSalary(){
             var  name1,designation1,hours1,Employee_id,joining_date;
-            var salary=0;
+            let salary;
             name1 = document.getElementById("name").value;
             Employee_id= document.getElementById("empid").value;Name = Number(document.getElementById("name").value);
             hours1 = Number(document.getElementById("hours").value);
@@ -22,23 +22,25 @@
 
          if(designation1=="Manager"){
 
-            salary = (hours1*90);
+            salary = hours1*90;
 
          }
          else if(designation1=="Consultant"){
 
-            salary = (hours1*70);
+            salary = hours1*70;
 
          }
          else if(designation1=="Trainee"){
 
-            salary = (hours1*45);
+            salary = hours1*45;
          }
+         alert(salary);
          
-         var message = name1 + " who is a " + "'"+ designation1 +"'"+" will get "+"$"+ salary;
+         var message = name1 + " who is a " + "'"+ designation1 +"'"+" will get "+" $ "+ salary;
          
 
-         localStorage.setItem("TotalSalary",message)
+         localStorage.setItem("TotalSalary",message);
+         return false;
 
         }
 
@@ -73,23 +75,20 @@
         <td><label for="designation1">Designation:</label></td>
         <select name="DesignationSelector" id="designation" required>
             <option>Select</option>
-              <option value="manager">Manager</option>  
-              <option value="consultant">Consultant</option>  
-              <option value="trainee">Trainee</option>  
+              <option value="Manager">Manager</option>  
+              <option value="Consultant">Consultant</option>  
+              <option value="Trainee">Trainee</option>  
         </select>
     </div><br>
     <div >
-    <button id="button1" onclick="getSalary()">Submit</button> 
+    <button id="button1" onclick="getSalary();">Submit</button> 
     
    
     </div>
     <br><br>
     <div>
        
-        
-            
-        
-       
+     
     </div>
     </form>
 
