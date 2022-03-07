@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JSSassignment1.css">
+
+
+   
+    <script>
+
+        function getSalary(){
+            var  name1,designation1,hours1,Employee_id,joining_date;
+            var salary=0;
+            name1 = document.getElementById("name").value;
+            Employee_id= document.getElementById("empid").value;Name = Number(document.getElementById("name").value);
+            hours1 = Number(document.getElementById("hours").value);
+            designation1 = document.getElementById("designation").value;
+            joining_date= document.getElementById("date").value;
+
+         if(designation1=="Manager"){
+
+            salary = (hours1*90);
+
+         }
+         else if(designation1=="Consultant"){
+
+            salary = (hours1*70);
+
+         }
+         else if(designation1=="Trainee"){
+
+            salary = (hours1*45);
+         }
+         
+         var message = name1 + " who is a " + "'"+ designation1 +"'"+" will get "+"$"+ salary;
+         
+
+         localStorage.setItem("TotalSalary",message)
+
+        }
+
+
+    </script>
+    </head>
+
+    <body>
+    <h1>Employee Details</h1>
+    <form action="salary.html" method="get"> 
+    <br>
+    <div>
+        
+        <td><label for="name1">Name:</label></td>
+        <td><input type="text" id="name" placeholder="Enter Name" required/></td>
+    </div><br>
+                
+        <td><label for="empid1">Employee Id:</label></td>
+        <td><input type="text" id="empid" placeholder="Enter Employee Id" required/></td>
+    </div><br><br>
+    <div>
+        
+        <td><label for="date1">Joining Date:</label></td>
+        <td><input type="date" id="date" placeholder="Enter Date" required/></td>
+    </div><br>
+                
+        <td><label for="hours1">Hours worked:</label></td>
+        <td><input type="text" id="hours" placeholder="Enter Hours worked" required/></td>
+    </div><br><br>
+    <div>
+        
+        <td><label for="designation1">Designation:</label></td>
+        <select name="DesignationSelector" id="designation" required>
+            <option>Select</option>
+              <option value="manager">Manager</option>  
+              <option value="consultant">Consultant</option>  
+              <option value="trainee">Trainee</option>  
+        </select>
+    </div><br>
+    <div >
+    <button id="button1" onclick="getSalary()">Submit</button> 
+    
+   
+    </div>
+    <br><br>
+    <div>
+       
+        
+            
+        
+       
+    </div>
+    </form>
+
+</body>
+</html>
