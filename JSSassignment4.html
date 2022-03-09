@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JSSassignment1.css">
+   
+    <script src="AssignmentEmployee.js"></script>
+    
+    </head>
+    <script>
+
+class Employee{
+    #name;#designation;#hours;
+    #Employee_id;#joining_date;
+    #salary;
+ constructor(name,designation,hours){
+    this.#name=name;
+    
+   
+    this.#hours = hours;
+    this.#designation = designation;
+   
+ }
+ 
+ get name() {​
+
+return this.#name;​
+
+}​
+
+set name(name) {​
+    this.#name=name;
+
+
+
+}​   
+get hours() {​
+
+return this.#hours;​
+
+}​
+
+set hours(hours) {​
+    this.#hours=hours;
+
+
+
+}​   
+get designation() {​
+
+return this.#designation;​
+
+}​
+
+set designation(designation) {​
+    this.#designation=designation;
+
+
+
+}​   
+
+
+
+}
+
+  function getSalary(){
+    let name,designation,hours,Employee_id,joining_date;
+            let salary;
+            name = document.getElementById("name").value;
+            Employee_id= document.getElementById("empid").value;Name = Number(document.getElementById("name").value);
+            hours = Number(document.getElementById("hours").value);
+            designation = document.getElementById("designation").value;
+            joining_date= document.getElementById("date").value;
+
+      const employee1=new Employee(document.getElementById("name").value,
+      document.getElementById("hours").value,document.getElementById("designation").value);
+
+ if(this.designation=="Manager"){
+
+    salary =this.hours*90;
+
+ }
+ else if(this.designation=="Consultant"){
+
+    salary =this.hours*70;
+
+ }
+ else if(this.designation=="Trainee"){
+
+    salary =this.hours*45;
+ }
+
+ alert(salary);
+
+ document.getElementById('result').innerHTML = this.name+" who is a "+"'"+this.designation+"'"+" will get "+"$" + salary;
+
+ message = this.name + " who is a " + "'"+ this.designation +"'"+" will get "+" $ "+ this.salary;
+ 
+
+  localStorage.setItem("TotalSalary",message);
+ return false;
+}
+
+    </script>
+
+    <body>
+    <h1>Employee Details</h1>
+    <form action="salary1.html" method="get"> 
+    <br>
+    <div>
+        
+        <td><label for="name1">Name:</label></td>
+        <td><input type="text" id="name" placeholder="Enter Name" required/></td>
+    </div><br>
+                
+        <td><label for="empid1">Employee Id:</label></td>
+        <td><input type="text" id="empid" placeholder="Enter Employee Id" required/></td>
+    </div><br><br>
+    <div>
+        
+        <td><label for="date1">Joining Date:</label></td>
+        <td><input type="date" id="date" placeholder="Enter Date" required/></td>
+    </div><br>
+                
+        <td><label for="hours1">Hours worked:</label></td>
+        <td><input type="text" id="hours" placeholder="Enter Hours worked" required/></td>
+    </div><br><br>
+    <div>
+        
+        <td><label for="designation1">Designation:</label></td>
+        <select name="DesignationSelector" id="designation" required>
+            <option>Select</option>
+              <option value="Manager">Manager</option>  
+              <option value="Consultant">Consultant</option>  
+              <option value="Trainee">Trainee</option>  
+        </select>
+    </div><br>
+    <div >
+    <button id="button1" onclick="getSalary();">Submit</button> 
+    
+   
+    </div>
+    <br><br>
+    <div>
+       
+     
+    </div>
+    </form>
+
+</body>
+</html>
