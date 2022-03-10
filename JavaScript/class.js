@@ -4,3 +4,4 @@ function getValues(){
 }
 let [x,y,z,...args]=getValues();
 
+console.log(x);

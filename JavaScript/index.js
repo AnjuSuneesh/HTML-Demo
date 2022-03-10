@@ -264,19 +264,36 @@ console.log("Value of a is: "+a + ", Value of b is "+b); */
 
 
 
-let colors = ["white ","blue","yellow","black","red","green"];​
-function getColors() {​
+// let colors = ["white ","blue","yellow","black","red","green"];​
+// function getColors() {​
     
 
-    return ['white ','blue','yellow','black','red','green'];​
+//     return ['white ','blue','yellow','black','red','green'];​
  
- }​;
+//  }​;
  
- let [firstColor,secondColor ,...otherColors] = getColors();​
-console.log(firstColor,secondColor,otherColors); 
+//  let [firstColor,secondColor ,...otherColors] = getColors();​
+// console.log(firstColor,secondColor,otherColors); 
 
-console.log(firstColor); 
+// console.log(firstColor); 
 
-console.log(secondColor); 
-console.log(otherColors); 
+// console.log(secondColor); 
+// 
+// function add(x,y,z){
+//     let sum=x+y+z;
+//     console.log(sum)
 
+// const}
+let order = (call_production) =>{
+
+
+   
+   console.log("Order placed. Please call production") // function  is being called​
+   
+ 
+   
+   call_production();
+   
+    }; 
+    let production = () =>{ console.log("Production has started") }; 
+    order(production);

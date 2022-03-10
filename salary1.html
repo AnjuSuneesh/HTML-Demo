@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="JSSassignment1.css">
-    <script src="AssignmentEmployee.js"></script>
+   
 
 </head>
 <body>
@@ -16,6 +16,7 @@
     <br><br><br>
     <span id="result"></span>
     <script>
+        console.log(localStorage.getItem("TotalSalary"));
         document.getElementById("result").innerHTML=localStorage.getItem("TotalSalary");
     </script>
 </body>

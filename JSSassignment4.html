@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="JSSassignment1.css">
    
-    <script src="AssignmentEmployee.js"></script>
+    <!-- <script src="AssignmentEmployee.js"></script> -->
     
     </head>
     <script>
@@ -22,62 +22,63 @@ class Employee{
    
     this.#hours = hours;
     this.#designation = designation;
+    
    
  }
  
- get name() {​
+ get name() {
+return this.#name;
+ }
 
-return this.#name;​
-
-}​
-
-set name(name) {​
+set name(name) {
     this.#name=name;
 
 
 
-}​   
-get hours() {​
+} 
+get hours(){
 
-return this.#hours;​
+return this.#hours;
 
-}​
+}
 
-set hours(hours) {​
+set hours(hours) {
     this.#hours=hours;
 
 
 
-}​   
-get designation() {​
+}
+get designation() {
 
-return this.#designation;​
+return this.#designation;
 
-}​
+}
 
-set designation(designation) {​
+set designation(designation){
     this.#designation=designation;
 
 
 
-}​   
+} 
 
 
 
 }
 
   function getSalary(){
+      alert('1');
+    alert(this.document.getElementById("designation").value);
     let name,designation,hours,Employee_id,joining_date;
             let salary;
             name = document.getElementById("name").value;
-            Employee_id= document.getElementById("empid").value;Name = Number(document.getElementById("name").value);
+            Employee_id= document.getElementById("empid").value;
             hours = Number(document.getElementById("hours").value);
             designation = document.getElementById("designation").value;
             joining_date= document.getElementById("date").value;
 
-      const employee1=new Employee(document.getElementById("name").value,
-      document.getElementById("hours").value,document.getElementById("designation").value);
+        var employee1=new Employee(name,hours,designation);
 
+      alert(this.designation);
  if(this.designation=="Manager"){
 
     salary =this.hours*90;
