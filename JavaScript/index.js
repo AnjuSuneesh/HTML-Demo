@@ -284,16 +284,17 @@ console.log("Value of a is: "+a + ", Value of b is "+b); */
 //     console.log(sum)
 
 // const}
-let order = (call_production) =>{
+// let order = (call_production) =>{
 
 
    
-   console.log("Order placed. Please call production") // function  is being called​
+//    console.log("Order placed. Please call production") // function  is being called​
    
  
    
-   call_production();
+//    call_production();
    
-    }; 
-    let production = () =>{ console.log("Production has started") }; 
-    order(production);
+//     }; 
+//     let production = () =>{ console.log("Production has started") }; 
+//     order(production);
+function getUsers
