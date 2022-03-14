@@ -22,18 +22,20 @@
     
                 alert('Great! You took '  + count + " attempts to guess it right")
               
-                
+                document.getElementById("number").value = " ";
               }
             else if(a>4)
             {
                
                 alert('Your guess is too high')
                 count=count+1;
+                document.getElementById("number").value = " ";
             }
             else if(a<4) 
             {
                 alert('Your guess is too small')
                 count=count+1;
+                document.getElementById("number").value = " ";
             }
           
            
@@ -54,7 +56,7 @@
         
         <div >
         <button id="button1" onclick="checkNumber()">CHECK</button>
-        <input type="reset" value="RESET">
+        <input type="reset" value="Reset" name="reset">
         </div>
         <br><br>
 </body>
